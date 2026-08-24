@@ -7,7 +7,7 @@ module bin2bcd (
   always @(*) begin
     bcd = 8'd0;
     for (i = 0; i <= 4; i = i + 1) begin
-      if (bcd[3:0] >= 5) bcd[3:0] = bcd[3:0] + 3;
+      if (bcd[3:0] >= 5) bcd[3:0] = bcd[3:0] + 4'd3;
       bcd = {bcd[6:0], bin[4-i]};
     end
   end
