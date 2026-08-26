@@ -46,25 +46,27 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/century_clock_top.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/5_control_system/mode_control.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/4_display_system/led_blink.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/4_display_system/hex_to7seg.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/4_display_system/display_control.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/4_display_system/bin2bcd.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/3_date_system/year_counter.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/3_date_system/month_counter.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/3_date_system/leap_year_check.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/3_date_system/day_in_month.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/3_date_system/day_counter.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/3_date_system/date_core.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/2_time_system/time_core.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/2_time_system/counter_60.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/2_time_system/counter_24.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/1_input_system/edge_detecter.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/1_input_system/debounce.v
-set_global_assignment -name VERILOG_FILE ../../EDABK_Verilog/century_clock/0_clock_system/tick_generator_1hz.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE ../0_clock_system/tick_generator_1hz.v
+set_global_assignment -name VERILOG_FILE ../1_input_system/edge_detecter.v
+set_global_assignment -name VERILOG_FILE ../1_input_system/debounce.v
+set_global_assignment -name VERILOG_FILE ../2_time_system/time_core.v
+set_global_assignment -name VERILOG_FILE ../2_time_system/counter_60.v
+set_global_assignment -name VERILOG_FILE ../2_time_system/counter_24.v
+set_global_assignment -name VERILOG_FILE ../3_date_system/year_counter.v
+set_global_assignment -name VERILOG_FILE ../3_date_system/month_counter.v
+set_global_assignment -name VERILOG_FILE ../3_date_system/leap_year_check.v
+set_global_assignment -name VERILOG_FILE ../3_date_system/day_in_month.v
+set_global_assignment -name VERILOG_FILE ../3_date_system/day_counter.v
+set_global_assignment -name VERILOG_FILE ../3_date_system/date_core.v
+set_global_assignment -name VERILOG_FILE ../4_display_system/led_blink.v
+set_global_assignment -name VERILOG_FILE ../4_display_system/hex_to7seg.v
+set_global_assignment -name VERILOG_FILE ../4_display_system/display_control.v
+set_global_assignment -name VERILOG_FILE ../4_display_system/bin2bcd.v
+set_global_assignment -name VERILOG_FILE ../century_clock_top.v
+set_global_assignment -name VERILOG_FILE ../5_control_system/mode_control.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

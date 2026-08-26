@@ -1,0 +1,6 @@
+Info (10281): Verilog HDL Declaration information at mode_control.v(6): object "set_sec" differs only in case from object "SET_SEC" in the same scope
+Info (10281): Verilog HDL Declaration information at mode_control.v(7): object "set_min" differs only in case from object "SET_MIN" in the same scope
+Info (10281): Verilog HDL Declaration information at mode_control.v(8): object "set_hour" differs only in case from object "SET_HOUR" in the same scope
+Info (10281): Verilog HDL Declaration information at mode_control.v(9): object "set_day" differs only in case from object "SET_DAY" in the same scope
+Info (10281): Verilog HDL Declaration information at mode_control.v(10): object "set_month" differs only in case from object "SET_MONTH" in the same scope
+Info (10281): Verilog HDL Declaration information at mode_control.v(11): object "set_year" differs only in case from object "SET_YEAR" in the same scope
