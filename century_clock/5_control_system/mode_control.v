@@ -59,11 +59,17 @@ module mode_control (
       NORMAL:    is_editing  = 1'b0;
       SET_SEC:   set_sec     = 1'b1;
       SET_MIN:   set_min     = 1'b1;
+                 set_sec     = 1'b0;
       SET_HOUR:  set_hour    = 1'b1;
+                 set_min     = 1'b0;
       SET_DAY:   set_day     = 1'b1;
+                 set_hour    = 1'b0;
       SET_MONTH: set_month   = 1'b1;
+                 set_day     = 1'b0;
       SET_YEAR:  set_year    = 1'b1;
+                 set_month   = 1'b0;
       SET_CEN:   set_century = 1'b1;
+                 set_year    = 1'b0;
       default:   is_editing  = 1'b0;
     endcase
   end
