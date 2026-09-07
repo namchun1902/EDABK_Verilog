@@ -1,9 +1,7 @@
-
-reg [15:0] sram_a_bank0 [0:15];
-reg [15:0] sram_a_bank1 [0:15];
-reg [15:0] sram_a_bank2 [0:15];
-reg [15:0] sram_a_bank3 [0:15];
-
+DATA_WIDTH = 16
+MAC_UNITS = 4
+    wire signed [DATA_WIDTH-1:0] a_data [0:MAC_UNITS-1];
+    wire signed [DATA_WIDTH-1:0] b_data [0:MAC_UNITS-1];
 
 //tb
 // Sinh dữ liệu và nạp vào bank
