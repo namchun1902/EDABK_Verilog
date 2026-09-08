@@ -12,3 +12,10 @@ for (i = 0; i < 16; i = i + 1) begin
     sram_a_bank3[i] = random_vector[i*4 + 3]; // Nạp a3, a7, a11...
 end
 //done
+
+reg [15:0] mem [0:63];
+always @(posedge clk) begin
+    a_dout <= mem[i]; // Đọc tuần tự
+end
+
+assign i_last = (i == 64);
