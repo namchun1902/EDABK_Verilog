@@ -1,0 +1,7 @@
+# Ignore generated synthesis and simulation files
+db/
+incremental_db/
+output_files/
+simulation/
+*.bak
+*.qws
