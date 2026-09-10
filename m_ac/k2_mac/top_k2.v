@@ -2,8 +2,6 @@ module top_k2 (
   input  wire               clk,
   input  wire               rst_n,
   input  wire               start,
-  input  wire signed [15:0] sram_data_a,
-  input  wire signed [15:0] sram_data_b,
 
   output wire [5:0]         sram_addr,
   output wire               done,
@@ -17,6 +15,20 @@ module top_k2 (
   wire               acc_clr;
   wire               i_last;  // Từ bộ so sánh ra
   wire signed [31:0] p_prod;  // Kết quả ra từ bộ mult
+
+  wire signed [15:0] sram_data_a;
+  wire signed [15:0] sram_data_b;
+  // SRAM nạp mất 1 chu kỳ
+  sram_model sram_model_a (
+    .clk      ( clk         ),
+    .addr     ( sram_addr   ),
+    .data_out ( sram_data_a )
+  );
+  sram_model sram_model_b (
+    .clk      ( clk         ),
+    .addr     ( sram_addr   ),
+    .data_out ( sram_data_b )
+  );
 
   fsm fsm_inst (
     .clk     ( clk     ),

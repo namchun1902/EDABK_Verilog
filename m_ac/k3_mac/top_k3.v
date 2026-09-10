@@ -2,18 +2,14 @@ module top_k3 (
   input wire clk,
   input wire rst_n,
   input wire start,
-  input wire signed [15:0] sram_data_a [0:3],
-  input wire signed [15:0] sram_data_b [0:3],
-
-  //Output 4 địa chỉ cho 8 SRAM
-  output wire [5:0] sram_addr_0,
-  output wire [5:0] sram_addr_1,
-  output wire [5:0] sram_addr_2,
-  output wire [5:0] sram_addr_3,
 
   output wire               done,
   output wire signed [39:0] mac_sum
 );
+
+  // Chia bank
+  wire signed [15:0] sram_data_a [0:3];
+  wire signed [15:0] sram_data_b [0:3];
 
   // Dây ra từ bộ đếm
   wire [3:0] index;
@@ -110,10 +106,69 @@ module top_k3 (
     .sum     ( mac_sum     )
   );
 
-  // Địa chỉ cho 4 cặp sram
-  assign sram_addr_0 = {index, 2'b00}; // i*4 + 0
-  assign sram_addr_1 = {index, 2'b01}; // i*4 + 1
-  assign sram_addr_2 = {index, 2'b10}; // i*4 + 2
-  assign sram_addr_3 = {index, 2'b11}; // i*4 + 3
+  // Nạp dữ liệu vào sram mất 1 chu kỳ
+  // i
+  sram_model #(
+    .ADDR_WIDTH (4)
+  ) sram_model_ai (
+    .clk      ( clk            ),
+    .addr     ( index         ),
+    .data_out ( sram_data_a[0] )
+  ); 
+  sram_model #(
+    .ADDR_WIDTH (4)
+  ) sram_model_bi (
+    .clk      ( clk            ),
+    .addr     ( index         ),
+    .data_out ( sram_data_b[0] )
+  ); 
+
+  // i+1
+  sram_model #(
+    .ADDR_WIDTH (4)
+  ) sram_model_ai1 (
+    .clk      ( clk            ),
+    .addr     ( index         ),
+    .data_out ( sram_data_a[1] )
+  ); 
+  sram_model #(
+    .ADDR_WIDTH (4)
+  ) sram_model_bi1 (
+    .clk      ( clk            ),
+    .addr     ( index         ),
+    .data_out ( sram_data_b[1] )
+  );
+  
+  // i+2
+  sram_model #(
+    .ADDR_WIDTH (4)
+  ) sram_model_ai2 (
+    .clk      ( clk            ),
+    .addr     ( index         ),
+    .data_out ( sram_data_a[2] )
+  ); 
+  sram_model #(
+    .ADDR_WIDTH (4)
+  ) sram_model_bi2 (
+    .clk      ( clk            ),
+    .addr     ( index         ),
+    .data_out ( sram_data_b[2] )
+  );
+
+  // i+3
+  sram_model #(
+    .ADDR_WIDTH (4)
+  ) sram_model_ai3 (
+    .clk      ( clk            ),
+    .addr     ( index         ),
+    .data_out ( sram_data_a[3] )
+  ); 
+  sram_model #(
+    .ADDR_WIDTH (4)
+  ) sram_model_bi3 (
+    .clk      ( clk            ),
+    .addr     ( index         ),
+    .data_out ( sram_data_b[3] )
+  );
 
 endmodule
