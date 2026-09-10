@@ -53,17 +53,17 @@ module fsm (
 
   // Output logic
   always @(current_state) begin
-    case (current_state)
-      {i_inc,
+       {i_inc,
        i_clr,
        acc_clr,
        acc_en} = {0};
-       done    = 0;
+       done    =  0;
+    case (current_state)
       S_IDLE: begin
         {i_inc,
          i_clr,
          acc_clr,
-         acc_en} = {0};
+         acc_en} = {4'b0000};
          done    = 0;
       end
       S_INIT: begin

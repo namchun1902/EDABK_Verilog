@@ -1,6 +1,6 @@
 module accumulator #(
   parameter P_WIDTH = 32,
-  parameter SUM_WIDTH = 40;
+  parameter SUM_WIDTH = 40
 ) (
   input  wire                        clk,
   input  wire                        rst_n,

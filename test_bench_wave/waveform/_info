@@ -1,0 +1,287 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Century-Clock--master/tb
+vaccumulator
+Z0 !s110 1789047871
+!i10b 1
+!s100 OU2n_z5^WMN]6;B_@]DU82
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IjeG`HJSnLLkVgXcZWG>CO0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/EDABK_Verilog/test_bench_wave
+w1789028738
+8D:/EDABK_Verilog/m_ac/k2_mac/accumulator.v
+FD:/EDABK_Verilog/m_ac/k2_mac/accumulator.v
+!i122 299
+Z4 L0 1 22
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1789047871.000000
+!s107 D:/EDABK_Verilog/m_ac/k2_mac/accumulator.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/k2_mac/accumulator.v|
+!i113 1
+Z7 o-work waveform
+Z8 tCvgOpt 0
+vadder_tree
+R0
+!i10b 1
+!s100 dCO=mF;b[bDfakM19U<o43
+R1
+ISfoGX3c^Jj1imSU3XP=?S0
+R2
+R3
+Z9 w1789028264
+8D:/EDABK_Verilog/m_ac/k3_mac/adder_tree.v
+FD:/EDABK_Verilog/m_ac/k3_mac/adder_tree.v
+!i122 297
+L0 1 12
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/EDABK_Verilog/m_ac/k3_mac/adder_tree.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/k3_mac/adder_tree.v|
+!i113 1
+R7
+R8
+vcomparator
+R0
+!i10b 1
+!s100 SzhogM22eSnCZ]?3?ozd10
+R1
+IFPTiLIdZ;Q]^KN_zbi:3P0
+R2
+R3
+R9
+8D:/EDABK_Verilog/m_ac/k2_mac/comparator.v
+FD:/EDABK_Verilog/m_ac/k2_mac/comparator.v
+!i122 300
+L0 1 10
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/EDABK_Verilog/m_ac/k2_mac/comparator.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/k2_mac/comparator.v|
+!i113 1
+R7
+R8
+vcounter
+Z10 !s110 1789047872
+!i10b 1
+!s100 7AJjk=bcZY[YLU[z;;l7W3
+R1
+IDki3l>M;JOcZ<gdH8i[Ti0
+R2
+R3
+R9
+8D:/EDABK_Verilog/m_ac/k2_mac/counter.v
+FD:/EDABK_Verilog/m_ac/k2_mac/counter.v
+!i122 301
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/EDABK_Verilog/m_ac/k2_mac/counter.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/k2_mac/counter.v|
+!i113 1
+R7
+R8
+vfsm
+R10
+!i10b 1
+!s100 k4okkhYz>h=i<IXO?Zka]0
+R1
+I7cGe;cIMcblQ^Ka[[dla[2
+R2
+R3
+w1789029804
+8D:/EDABK_Verilog/m_ac/k2_mac/fsm.v
+FD:/EDABK_Verilog/m_ac/k2_mac/fsm.v
+!i122 302
+L0 1 113
+R5
+r1
+!s85 0
+31
+Z11 !s108 1789047872.000000
+!s107 D:/EDABK_Verilog/m_ac/k2_mac/fsm.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/k2_mac/fsm.v|
+!i113 1
+R7
+R8
+vfsmk4
+R0
+!i10b 1
+!s100 <1]Z<khM>3LCd7ciYk=EA1
+R1
+IfB@Z3W77:_Z;[<2P;<AzI2
+R2
+R3
+w1789043630
+8D:/EDABK_Verilog/m_ac/k4_mac/fsmk4.v
+FD:/EDABK_Verilog/m_ac/k4_mac/fsmk4.v
+!i122 295
+L0 1 77
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/EDABK_Verilog/m_ac/k4_mac/fsmk4.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/k4_mac/fsmk4.v|
+!i113 1
+R7
+R8
+vmultiplier
+R10
+!i10b 1
+!s100 nf=C:oiC2U`:EIfR3<=z31
+R1
+Il60ahE47a2LNBe8mXd_CM0
+R2
+R3
+R9
+8D:/EDABK_Verilog/m_ac/k2_mac/multiplier.v
+FD:/EDABK_Verilog/m_ac/k2_mac/multiplier.v
+!i122 303
+L0 1 9
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/EDABK_Verilog/m_ac/k2_mac/multiplier.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/k2_mac/multiplier.v|
+!i113 1
+R7
+R8
+vsram_model
+R10
+!i10b 1
+!s100 Q6]fHQNgcU>fM=`1QzBNI2
+R1
+IcJUB9OL_o=iiX9b]nBzna2
+R2
+R3
+w1789029661
+8D:/EDABK_Verilog/m_ac/sram_model.v
+FD:/EDABK_Verilog/m_ac/sram_model.v
+!i122 305
+L0 1 24
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/EDABK_Verilog/m_ac/sram_model.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/sram_model.v|
+!i113 1
+R7
+R8
+vtb_top_all
+R0
+!i10b 1
+!s100 2aVYWh]G@YeF@bU`2SWTg2
+R1
+IikX69J]J^noM@z4LD9MKh2
+R2
+R3
+w1789046793
+8D:/EDABK_Verilog/m_ac/test_bench/tb_top_all.v
+FD:/EDABK_Verilog/m_ac/test_bench/tb_top_all.v
+!i122 294
+L0 3 135
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/EDABK_Verilog/m_ac/test_bench/tb_top_all.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/test_bench/tb_top_all.v|
+!i113 1
+R7
+R8
+vtop_k2
+R10
+!i10b 1
+!s100 ILIoEn25UZ];iU?NXjNBR1
+R1
+I>Y^ezR?o7cVE<ob>l4m7d0
+R2
+R3
+R9
+8D:/EDABK_Verilog/m_ac/k2_mac/top_k2.v
+FD:/EDABK_Verilog/m_ac/k2_mac/top_k2.v
+!i122 304
+L0 1 73
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/EDABK_Verilog/m_ac/k2_mac/top_k2.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/k2_mac/top_k2.v|
+!i113 1
+R7
+R8
+vtop_k3
+R0
+!i10b 1
+!s100 PVINJSS^DDlhoiY`?DS2E0
+R1
+IAJdo[afiih``VXXZD8eRU0
+R2
+R3
+R9
+8D:/EDABK_Verilog/m_ac/k3_mac/top_k3.v
+FD:/EDABK_Verilog/m_ac/k3_mac/top_k3.v
+!i122 298
+L0 1 174
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/EDABK_Verilog/m_ac/k3_mac/top_k3.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/k3_mac/top_k3.v|
+!i113 1
+R7
+R8
+vtop_k4
+R0
+!i10b 1
+!s100 _[0GUZXTlf:PXkOHoaESA3
+R1
+IBzmDh4C:a4hziI1_hCK]K3
+R2
+R3
+R9
+8D:/EDABK_Verilog/m_ac/k4_mac/top_k4.v
+FD:/EDABK_Verilog/m_ac/k4_mac/top_k4.v
+!i122 296
+L0 1 95
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/EDABK_Verilog/m_ac/k4_mac/top_k4.v|
+!s90 -reportprogress|300|-work|waveform|-stats=none|D:/EDABK_Verilog/m_ac/k4_mac/top_k4.v|
+!i113 1
+R7
+R8

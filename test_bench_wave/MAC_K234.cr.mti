@@ -1,0 +1,86 @@
+D:/EDABK_Verilog/m_ac/k4_mac/fsmk4.v {1 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/k4_mac/fsmk4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fsmk4
+
+Top level modules:
+	fsmk4
+
+} {} {}} D:/EDABK_Verilog/m_ac/k2_mac/multiplier.v {1 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/k2_mac/multiplier.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} D:/EDABK_Verilog/m_ac/k2_mac/accumulator.v {1 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/k2_mac/accumulator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module accumulator
+
+Top level modules:
+	accumulator
+
+} {} {}} D:/EDABK_Verilog/m_ac/k2_mac/comparator.v {1 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/k2_mac/comparator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} D:/EDABK_Verilog/m_ac/k3_mac/top_k3.v {1 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/k3_mac/top_k3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module top_k3
+
+Top level modules:
+	top_k3
+
+} {} {}} D:/EDABK_Verilog/m_ac/test_bench/tb_top_all.v {1 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/test_bench/tb_top_all.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_top_all
+
+Top level modules:
+	tb_top_all
+
+} {} {}} D:/EDABK_Verilog/m_ac/k2_mac/fsm.v {2 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/k2_mac/fsm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fsm
+** Warning: D:/EDABK_Verilog/m_ac/k2_mac/fsm.v(59): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+
+Top level modules:
+	fsm
+
+} {} {}} D:/EDABK_Verilog/m_ac/sram_model.v {1 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/sram_model.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sram_model
+
+Top level modules:
+	sram_model
+
+} {} {}} D:/EDABK_Verilog/m_ac/k2_mac/top_k2.v {1 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/k2_mac/top_k2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module top_k2
+
+Top level modules:
+	top_k2
+
+} {} {}} D:/EDABK_Verilog/m_ac/k3_mac/adder_tree.v {1 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/k3_mac/adder_tree.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module adder_tree
+
+Top level modules:
+	adder_tree
+
+} {} {}} D:/EDABK_Verilog/m_ac/k2_mac/counter.v {1 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/k2_mac/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} D:/EDABK_Verilog/m_ac/k4_mac/top_k4.v {1 {vlog -work waveform -stats=none D:/EDABK_Verilog/m_ac/k4_mac/top_k4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module top_k4
+
+Top level modules:
+	top_k4
+
+} {} {}}

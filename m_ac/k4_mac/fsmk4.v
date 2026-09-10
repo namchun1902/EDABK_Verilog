@@ -7,7 +7,7 @@ module fsmk4 (
   output reg i_inc,
   output reg i_clr,
   output reg acc_clr,
-  output reg valid_in, // T√≠n hi·ªáu cho ph√©p ghi v√†o ACC (Ph·∫£i qua 2 FF)
+  output reg valid_in, // TÌn hi?u cho phÈp ghi v‡o ACC (Ph?i qua 2 FF)
 
   output reg done
 );
@@ -18,7 +18,7 @@ module fsmk4 (
   localparam S_WAIT2 = 3'b011;
   localparam S_DONE  = 3'b100;
 
-  // reg l∆∞u tr·∫°ng th√°i 
+  // reg l˝u tr?ng th·i 
   reg [2:0] current_state;
   reg [2:0] next_state;
 
@@ -37,12 +37,10 @@ module fsmk4 (
         if (start)  next_state = S_RUN;
         else        next_state = S_IDLE;
       end
-      S_RUN:        next_state = S_WAIT1;
+      S_RUN:  if (i_last) next_state = S_WAIT1;
+              else        next_state = S_RUN;
       S_WAIT1:      next_state = S_WAIT2;
-      S_WAIT2: begin
-        if (i_last) next_state = S_DONE;
-        else        next_state = S_RUN;
-      end
+      S_WAIT2:      next_state = S_DONE;
       S_DONE:       next_state = S_IDLE;
       default:      next_state = S_IDLE;
     endcase
@@ -60,31 +58,19 @@ module fsmk4 (
       S_IDLE: begin
         i_clr   = 1;
         acc_clr = 1;
-        done    = 0;
       end
       S_RUN: begin
-        i_clr             = 0;
-        acc_clr           = 0;
-        valid_in          = 1;
-        if (i_last) i_inc = 0;
-        else        i_inc = 1;
+        i_clr    = 0;
+        acc_clr  = 0;
+        valid_in = 1;
+        i_inc    = 1;
       end
       S_WAIT1: begin
-        i_clr    = 0;
-        i_inc    = 0;
-        acc_clr  = 0;
-        valid_in = 0;
-        done     = 0;
       end
       S_WAIT2: begin
       end 
       S_DONE: done = 1;
       default: begin
-        i_clr    = 0;
-        i_inc    = 0;
-        acc_clr  = 0;
-        valid_in = 0;
-        done     = 0;
       end
     endcase
   end
