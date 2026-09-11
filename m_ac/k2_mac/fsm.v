@@ -56,7 +56,7 @@ module fsm (
        {i_inc,
        i_clr,
        acc_clr,
-       acc_en} = {0};
+       acc_en} = {4'b0};
        done    =  0;
     case (current_state)
       S_IDLE: begin

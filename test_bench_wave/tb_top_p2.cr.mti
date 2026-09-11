@@ -1,0 +1,73 @@
+/home/numb/EDABK_Verilog/matvec_mult.v/adder_tree.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/adder_tree.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
+-- Compiling module adder_tree
+
+Top level modules:
+	adder_tree
+
+} {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/fsm_p2.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/fsm_p2.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
+-- Compiling module fsm_p2
+
+Top level modules:
+	fsm_p2
+
+} {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/sram_model.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/sram_model.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
+-- Compiling module sram_model
+
+Top level modules:
+	sram_model
+
+} {} {}} /home/numb/EDABK_Verilog/m_ac/k2_mac/accumulator.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/m_ac/k2_mac/accumulator.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
+-- Compiling module accumulator
+
+Top level modules:
+	accumulator
+
+} {} {}} /home/numb/EDABK_Verilog/m_ac/k2_mac/comparator.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/m_ac/k2_mac/comparator.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} /home/numb/EDABK_Verilog/m_ac/k2_mac/counter.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/m_ac/k2_mac/counter.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/top_p2.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/top_p2.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
+-- Compiling module top_p2
+
+Top level modules:
+	top_p2
+
+} {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/tb.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/tb.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
+-- Compiling module tb_top_p2
+
+Top level modules:
+	tb_top_p2
+
+} {} {}} /home/numb/EDABK_Verilog/m_ac/k2_mac/multiplier.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/m_ac/k2_mac/multiplier.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}}

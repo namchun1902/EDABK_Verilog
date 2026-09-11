@@ -1,26 +1,26 @@
 `timescale 1ns/1ns
 
 module tb_top_all;
-  // Các tín hi?u
+  // Cï¿½c tï¿½n hi?u
   reg clk;
   reg rst_n;
   reg start;
 
-  // Các output c?a K2
+  // Cï¿½c output c?a K2
   wire [5:0]         addr_k2;
   wire               done_k2;
   wire signed [39:0] sum_k2;
 
-  // Các output c?a K3
+  // Cï¿½c output c?a K3
   wire               done_k3;
   wire signed [39:0] sum_k3;
 
-  // Các output c?a K4
-  wire [5:0]         addr_k4;
+  // Cï¿½c output c?a K4
+  wire        [5:0]  addr_k4;
   wire               done_k4;
   wire signed [39:0] sum_k4;
 
-  // Các m?ng t?m th?i ð? lýu d? li?u
+  // Cï¿½c m?ng t?m th?i ï¿½? lï¿½u d? li?u
   reg signed [15:0] mem_a_tmp [0:63];
   reg signed [15:0] mem_b_tmp [0:63];
 
@@ -56,7 +56,7 @@ module tb_top_all;
     forever #5 clk = ~clk;
   end
 
-  // 2. Test trên 1000 vector
+  // 2. Test trï¿½n 1000 vector
   integer seed;
   integer test_idx; // 1000
   integer i;
@@ -71,7 +71,7 @@ module tb_top_all;
     #10;
 
     for (test_idx = 1; test_idx <= 1000; test_idx = test_idx + 1) begin
-      // A. Bõm d? li?u ng?u nhiên
+      // A. Bï¿½m d? li?u ng?u nhiï¿½n
       for (i = 0; i < 64; i = i + 1) begin
         mem_a_tmp[i] = $random(seed);
         mem_b_tmp[i] = $random(seed);
@@ -83,7 +83,7 @@ module tb_top_all;
         dut_k4.sram_model_b.mem[i] = mem_b_tmp[i];
       end
 
-      // N?p riêng cho K3 (Tách 64 ph?n t? vào 4 Bank)
+      // N?p riï¿½ng cho K3 (Tï¿½ch 64 ph?n t? vï¿½o 4 Bank)
       for (i = 0; i < 16; i = i + 1) begin
         // Bank 0
         dut_k3.sram_model_ai.mem[i]  = mem_a_tmp[i*4 + 0];
@@ -102,26 +102,26 @@ module tb_top_all;
       // B. Cho m?ch ch?y
       @(negedge clk);
       start = 1;
-      $display("B?t ð?u kích ho?t Test %d...", test_idx);
+      $display("B?t ï¿½?u kï¿½ch ho?t Test %d...", test_idx);
       @(negedge clk);
       start = 0;
 
-      // C. Ð?i cho m?ch ch?y xong
+      // C. ï¿½?i cho m?ch ch?y xong
       wait (done_k2 == 1'b1);
       @(negedge clk);
 
-      // D. So sánh self-check
+      // D. So sï¿½nh self-check
       if ((sum_k2 == sum_k3) && (sum_k3 == sum_k4)) begin
         if (test_idx % 100 == 0) begin
           $display("Test %4d: PASS | Ket qua = %d", test_idx, sum_k2);
         end
 
-        $display(" - Tong K2 (Ða chu ky): %d", sum_k2);
+        $display(" - Tong K2 (ï¿½a chu ky): %d", sum_k2);
         $display(" - Tong K3 (Chia Bank): %d", sum_k3);
         $display(" - Tong K4 (Pipeline) : %d", sum_k4);
       end else begin
-        $display("\n[LOI] Các ki?n trúc cho k?t qu? khác nhau t?i test s? %d!", test_idx);
-        $display(" - Tong K2 (Ða chu k?): %d", sum_k2);
+        $display("\n[LOI] Cï¿½c ki?n trï¿½c cho k?t qu? khï¿½c nhau t?i test s? %d!", test_idx);
+        $display(" - Tong K2 (ï¿½a chu k?): %d", sum_k2);
         $display(" - Tong K3 (Chia Bank): %d", sum_k3);
         $display(" - Tong K4 (Pipeline) : %d", sum_k4);
         $stop;
@@ -130,7 +130,7 @@ module tb_top_all;
       #50;
     end
 
-    $display(" CA 3 KIEN TRUC K2, K3, K4 HOAT ÐONG KHOP NHAU!   ");
+    $display(" CA 3 KIEN TRUC K2, K3, K4 HOAT ï¿½ONG KHOP NHAU!   ");
     $stop;
     
   end

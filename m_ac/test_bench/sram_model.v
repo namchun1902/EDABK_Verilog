@@ -22,3 +22,4 @@ module sram_model #(
   end
 
 endmodule
+  // dut_k2.sram_model_inst[1].mem[i] = mem_a_tmp[i];
