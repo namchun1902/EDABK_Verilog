@@ -130,7 +130,7 @@ module tb_top_all;
       #50;
     end
 
-    $display(" CA 3 KIEN TRUC K2, K3, K4 HOAT �ONG KHOP NHAU!   ");
+    $display(" CA 3 KIEN TRUC K2, K3, K4 HOAT DONG KHOP NHAU!   ");
     $stop;
     
   end
