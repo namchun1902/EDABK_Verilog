@@ -5,7 +5,8 @@ module top_unroll (
   input wire signed [1023:0] A_in,  // 64 phan tu A (8x8), moi phan tu 16-bit
   input wire signed [127:0]  x_in,  // 8 phan tu x, moi phan tu 16-bit
 
-  output wire               done
+  output wire               done,
+  output reg  signed [279:0] y_ram  // 8 phan tu y, moi phan tu 35-bit
 );
   // Thanh ghi trung gian
   // Thanh ghi A: 8 hang x 8 cot x 16-bit
@@ -17,9 +18,6 @@ module top_unroll (
   wire signed [31:0] p [0:7][0:7];
   // Ket qua 8 cay cong: 8 x 35-bit
   wire signed [34:0] y_sum [0:7];
-
-  // y_ram: 8 phan tu x 35-bit
-  reg signed [34:0] y_ram [0:7];
 
   // Tin hieu dieu khien tu FSM
   wire en;
@@ -92,13 +90,15 @@ module top_unroll (
   endgenerate
 
   // 6. Ghi vao Y_RAM
-  genvar k;
-  generate
-    for (k = 0; k < 8; k = k + 1) begin: Y_RAM
-      always @(posedge clk) begin
-        if (write_en) y_ram[k] <= y_sum[k];
+  integer k;
+  always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+      y_ram <= 280'd0;
+    end else if (write_en) begin
+      for (k = 0; k < 8; k = k + 1) begin
+        y_ram[k*35 +: 35] <= y_sum[k];
       end
     end
-  endgenerate
+  end
   
 endmodule
