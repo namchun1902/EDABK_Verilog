@@ -1,11 +1,11 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
 
 module tb_top_p2;
 
   // Parameters
-  localparam CLK_PERIOD = 10; // 10ns period -> 100MHz clock
+  localparam CLK_PERIOD = 10;
 
-  // Signals to connect to the dut_p2
+  // Signals
   reg clk;
   reg rst_n;
   reg start;
@@ -68,18 +68,17 @@ module tb_top_p2;
     
     // 4. Report the results
     $display("[%0t] 'done' signal detected!", $time);
-    @(posedge clk); // Wait one more cycle for results to be fully stable in y_ram
+    @(posedge clk);
     
     $display("--- Calculation Finished ---");
     $display("Total cycles from start to done: %0d", cycle_counter);
     
     $display("Output vector y (from internal dut_p2.y_ram):");
     for (i = 0; i < 8; i = i + 1) begin
-      // Accessing internal signals for verification requires hierarchical path
       $display("y[%0d] = %h (%d)", i, dut_p2.y_ram[i], dut_p2.y_ram[i]);
     end
 
-    // 5. Finish the simulation
+    // 5. Hoan thanh
     $display("--- Testbench Finished ---");
     $finish;
   end

@@ -1,4 +1,34 @@
-/home/numb/EDABK_Verilog/matvec_mult.v/adder_tree.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/adder_tree.v
+/home/numb/EDABK_Verilog/matvec_mult.v/sram_model.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/sram_model.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
+-- Compiling module sram_model
+
+Top level modules:
+	sram_model
+
+} {} {}} D:/EDABK_Verilog/matvec_mult.v/adder_tree.v {1 {vlog -work work -stats=none D:/EDABK_Verilog/matvec_mult.v/adder_tree.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module adder_tree
+
+Top level modules:
+	adder_tree
+
+} {} {}} D:/EDABK_Verilog/matvec_mult.v/fsm_p2.v {1 {vlog -work work -stats=none D:/EDABK_Verilog/matvec_mult.v/fsm_p2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fsm_p2
+
+Top level modules:
+	fsm_p2
+
+} {} {}} /home/numb/EDABK_Verilog/m_ac/k2_mac/multiplier.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/m_ac/k2_mac/multiplier.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/adder_tree.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/adder_tree.v
 Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
 -- Compiling module adder_tree
@@ -13,22 +43,6 @@ Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 
 Top level modules:
 	fsm_p2
-
-} {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/sram_model.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/sram_model.v
-Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
--- Compiling module sram_model
-
-Top level modules:
-	sram_model
-
-} {} {}} /home/numb/EDABK_Verilog/m_ac/k2_mac/accumulator.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/m_ac/k2_mac/accumulator.v
-Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
--- Compiling module accumulator
-
-Top level modules:
-	accumulator
 
 } {} {}} /home/numb/EDABK_Verilog/m_ac/k2_mac/comparator.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/m_ac/k2_mac/comparator.v
 Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
@@ -46,6 +60,41 @@ Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	counter
 
+} {} {}} D:/EDABK_Verilog/test_bench_wave/multiplier.v {1 {vlog -work work -stats=none D:/EDABK_Verilog/test_bench_wave/multiplier.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} D:/EDABK_Verilog/test_bench_wave/counter.v {1 {vlog -work work -stats=none D:/EDABK_Verilog/test_bench_wave/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} D:/EDABK_Verilog/test_bench_wave/comparator.v {1 {vlog -work work -stats=none D:/EDABK_Verilog/test_bench_wave/comparator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} D:/EDABK_Verilog/matvec_mult.v/top_p2.v {1 {vlog -work work -stats=none D:/EDABK_Verilog/matvec_mult.v/top_p2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module top_p2
+
+Top level modules:
+	top_p2
+
+} {} {}} D:/EDABK_Verilog/matvec_mult.v/tb.v {1 {vlog -work work -stats=none D:/EDABK_Verilog/matvec_mult.v/tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_top_p2
+
+Top level modules:
+	tb_top_p2
+
 } {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/top_p2.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/top_p2.v
 Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
@@ -62,12 +111,26 @@ Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	tb_top_p2
 
-} {} {}} /home/numb/EDABK_Verilog/m_ac/k2_mac/multiplier.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/m_ac/k2_mac/multiplier.v
+} {} {}} /home/numb/EDABK_Verilog/m_ac/k2_mac/accumulator.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/m_ac/k2_mac/accumulator.v
 Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) '/home/numb/EDABK_Verilog/test_bench_wave/tb_top_p2.mpf' is used as the ini file.
--- Compiling module multiplier
+-- Compiling module accumulator
 
 Top level modules:
-	multiplier
+	accumulator
+
+} {} {}} D:/EDABK_Verilog/matvec_mult.v/sram_model.v {1 {vlog -work work -stats=none D:/EDABK_Verilog/matvec_mult.v/sram_model.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sram_model
+
+Top level modules:
+	sram_model
+
+} {} {}} D:/EDABK_Verilog/test_bench_wave/accumulator.v {1 {vlog -work work -stats=none D:/EDABK_Verilog/test_bench_wave/accumulator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module accumulator
+
+Top level modules:
+	accumulator
 
 } {} {}}
