@@ -14,6 +14,22 @@ Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	adder_tree
 
+} {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/top_unroll.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/top_unroll.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/matvec_unroll.mpf' is used as the ini file.
+-- Compiling module top_unroll
+
+Top level modules:
+	top_unroll
+
+} {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/tb_top_unroll.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/tb_top_unroll.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/matvec_unroll.mpf' is used as the ini file.
+-- Compiling module tb_top_unroll
+
+Top level modules:
+	tb_top_unroll
+
 } {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/multiplier.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/multiplier.v
 Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) '/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/matvec_unroll.mpf' is used as the ini file.

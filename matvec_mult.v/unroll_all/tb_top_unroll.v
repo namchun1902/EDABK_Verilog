@@ -12,8 +12,13 @@ module tb_top_unroll;
   integer i, r, c;
 
   top_unroll dut (
-    .clk(clk), .rst_n(rst_n), .start(start),
-    .A_in(A_in), .x_in(x_in), .done(done), .y_ram(y_ram)
+    .clk   ( clk   ),
+    .rst_n ( rst_n ),
+    .start ( start ),
+    .A_in  ( A_in  ),
+    .x_in  ( x_in  ),
+    .done  ( done  ),
+    .y_ram ( y_ram )
   );
 
   // Clock
@@ -26,7 +31,7 @@ module tb_top_unroll;
     rst_n = 1;
     #CLK;
 
-    // === Test 1: A = all 1, x = all 1 => y[i] = 8 ===
+    // Testcase 1: A = 1 all, x = 1 all => y[i] = 8
     for (r = 0; r < 8; r = r+1)
       for (c = 0; c < 8; c = c+1)
         A_in[(r*8+c)*16 +: 16] = 1;
@@ -45,7 +50,7 @@ module tb_top_unroll;
     // Reset giua 2 test
     rst_n = 0; #(CLK*2); rst_n = 1; #CLK;
 
-    // === Test 2: A = identity, x = {1,2,...,8} => y[i] = i+1 ===
+    // Testcase 2: A = identity, x = {1,2,...,8} => y[i] = i+1
     A_in = 0;
     for (r = 0; r < 8; r = r+1)
       A_in[(r*8+r)*16 +: 16] = 1;  // duong cheo = 1
