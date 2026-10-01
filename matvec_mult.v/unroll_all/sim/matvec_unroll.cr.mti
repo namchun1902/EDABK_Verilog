@@ -1,0 +1,25 @@
+/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/fsm_unroll.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/fsm_unroll.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/matvec_unroll.mpf' is used as the ini file.
+-- Compiling module fsm_unroll
+
+Top level modules:
+	fsm_unroll
+
+} {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree_3stage.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree_3stage.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/matvec_unroll.mpf' is used as the ini file.
+-- Compiling module adder_tree
+
+Top level modules:
+	adder_tree
+
+} {} {}} /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/multiplier.v {1 {vlog -work work -vopt -stats=none /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/multiplier.v
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) '/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/matvec_unroll.mpf' is used as the ini file.
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}}
