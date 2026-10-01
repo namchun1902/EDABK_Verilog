@@ -1,5 +1,5 @@
-1 10 fsm_unroll 4 fast 58 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/work 0 0 0 0 106 0
-1 10 multiplier 4 fast 58 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/work 0 0 0 0 10 0
+2 10 fsm_unroll 4 fast 58 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/work 0 0 0 0 106 0
+2 10 multiplier 4 fast 58 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/work 0 0 0 0 10 0
 1 10 adder_tree 4 fast 58 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/work 0 0 0 0 34 0
 1 10 top_unroll 4 fast 58 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/work 0 0 0 0 5270 0
-1 13 tb_top_unroll 4 fast 58 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/work 0 0 180224 0 5829 0
+1 13 tb_top_unroll 4 fast 58 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim/work 0 0 180224 0 5502 0

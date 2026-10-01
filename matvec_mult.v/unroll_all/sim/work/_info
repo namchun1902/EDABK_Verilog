@@ -3,9 +3,13 @@ K4
 z2
 Z0 !s12c _opt1
 Z1 !s99 nomlopt
+Z2 !s12c _opt
+R1
 R0
 R1
-!s12c _opt
+R0
+R1
+R2
 R1
 !s11f vlog 2025.2 2025.05, May 31 2025
 13
@@ -14,153 +18,152 @@ R1
 !i10e 25
 !i10f 100
 cModel Technology
-Z2 d/home/numb
+Z3 d/home/numb
 T_opt
 !i145 1
 !i144 0
-!s110 1790833782
-V2>4O><c=@5P7l5h`Z9Ml[3
-Z3 04 13 4 work tb_top_unroll fast 0
-=1-4c82a997d6f7-6abdf476-9f0d2-4873
+!s110 1790852369
+Vi3aM9:S>3Hz8[J8=2661Y1
+Z4 04 13 4 work tb_top_unroll fast 0
+=1-4c82a997d6f7-6abe3d10-a6cbb-437c
 R1
-Z4 !s12f OEM100
-Z5 !s12b OEM100
-Z6 !s124 OEM10U75 
-Z7 !s135 nogc
+Z5 !s12f OEM100
+Z6 !s12b OEM100
+Z7 !s124 OEM10U75 
+Z8 !s135 nogc
 o-quiet -auto_acc_if_foreign -work work
-Z8 tCvgOpt 0
+Z9 tCvgOpt 0
 n@_opt
-Z9 OL;O;2025.2;82
-R2
+Z10 OL;O;2025.2;82
+R3
 T_opt1
 !i145 1
 !i144 0
-!s110 1790834930
-VCkX`E6QLE<OO9@Z5cJB6f2
-R3
-=1-4c82a997d6f7-6abdf8f2-1aebe-5cc8
-R1
+!s110 1790852441
+VC]c^;eRdbXbi?cl@:;1Pz0
 R4
+=1-4c82a997d6f7-6abe3d58-d1e48-4454
+R1
 R5
 R6
 R7
-o-quiet -auto_acc_if_foreign -work work +acc
 R8
-n@_opt1
+o-quiet -auto_acc_if_foreign -work work +acc
 R9
-R2
+n@_opt1
+R10
 vadder_tree
-2/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree_3stage.v
-Z10 !s110 1790838090
+2/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree.v
+Z11 !s110 1790852358
 !i10b 1
 !s100 75ZcLd>9JC>4o=PDgHzE30
-I5jnWfA9`lZnT19E7dSnkl1
-Z11 d/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim
-w1789135851
-8/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree_3stage.v
-F/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree_3stage.v
-!i122 10
+I;:SE77FUOczWHN[J@oG4X3
+Z12 d/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/sim
+w1790850844
+8/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree.v
+F/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree.v
+!i122 31
 L0 1 8
-Z12 VDg1SIo80bB@j0V0VzS_@n1
-Z13 OL;L;2025.2;82
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2025.2;82
 r1
 !s85 0
 31
-Z14 !s108 1790838090.000000
-!s107 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree_3stage.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree_3stage.v|
+Z15 !s108 1790852358.000000
+!s107 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/adder_tree.v|
 !i113 0
-Z15 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R8
+Z16 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R9
 vfsm_unroll
 2/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/fsm_unroll.v
-R10
+R11
 !i10b 1
 !s100 P1UWYRmZfD6;;??`Gm^1R0
 IlZP`;84WjHSSP?bm`HSze1
-R11
+R12
 w1790790794
 8/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/fsm_unroll.v
 F/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/fsm_unroll.v
-!i122 11
+!i122 27
 L0 1 70
-R12
 R13
+R14
 r1
 !s85 0
 31
-R14
+R15
 !s107 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/fsm_unroll.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/fsm_unroll.v|
 !i113 0
-R15
-R8
+R16
+R9
 vmultiplier
 2/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/multiplier.v
-R10
+R11
 !i10b 1
 !s100 nf=C:oiC2U`:EIfR3<=z31
 IikXi;251o]PD^<<lMg[=L1
-R11
+R12
 w1788933610
 8/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/multiplier.v
 F/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/multiplier.v
-!i122 12
+!i122 28
 L0 1 9
-R12
 R13
+R14
 r1
 !s85 0
 31
-R14
+R15
 !s107 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/multiplier.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/multiplier.v|
 !i113 0
-R15
-R8
+R16
+R9
 vtb_top_unroll
 2/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/tb_top_unroll.v
-Z16 !s110 1790838091
+R11
 !i10b 1
 !s100 nzcOE2^BIV;E=Tj9?9@ak3
 Id:^kaXng_?AEh[_4kdTYn2
-R11
-w1790835079
+R12
+w1790838107
 8/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/tb_top_unroll.v
 F/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/tb_top_unroll.v
-!i122 13
+!i122 29
 L0 3 70
-R12
 R13
+R14
 r1
 !s85 0
 31
-Z17 !s108 1790838091.000000
+R15
 !s107 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/tb_top_unroll.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/tb_top_unroll.v|
 !i113 0
-R15
-R8
+R16
+R9
 vtop_unroll
 2/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/top_unroll.v
-R16
+R11
 !i10b 1
 !s100 Tl2]Mzo25Qk_51TOcZgf03
 I5`ACfOzeHn:3e<0PWk0BQ0
-R11
+R12
 w1790834163
 8/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/top_unroll.v
 F/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/top_unroll.v
-!i122 14
+!i122 30
 L0 1 104
-R12
 R13
+R14
 r1
 !s85 0
 31
-R17
+R15
 !s107 /home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/top_unroll.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/numb/EDABK_Verilog/matvec_mult.v/unroll_all/top_unroll.v|
 !i113 0
-R15
-R8
+R16
+R9
